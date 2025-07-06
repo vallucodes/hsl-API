@@ -1,7 +1,11 @@
 # 📡 HSL API combined with microcontroller 🚌
 
-<img src="imgs/image.jpeg" width="45%" alt="Image 1">
-<img src="imgs/img2.png" width="45%" alt="Image 2">
+<table>
+<tr>
+<td><img src="imgs/image.jpeg" width="400" alt="Image 1"></td>
+<td><img src="imgs/img2.png" width="400" alt="Image 2"></td>
+</tr>
+</table>
 
 
 ## 🌐 Overview
