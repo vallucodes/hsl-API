@@ -34,7 +34,7 @@ Setup parameters in cfg/config.py
 
 Setup parameters in cfg/config.py.
 
-Find which tty USB is microcontrolles using. \
+Identify the tty USB device for microcontroller. \
 Replace `<nb>` with correct number
 ``` shell
 ls /dev/ttyUSB*
