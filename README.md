@@ -21,14 +21,12 @@ This microcontroller-based program fetches nearby public transport stops in Hels
 
 ## 🌟 Features
 
-Setup parameters in cfg/config.py
+Configuration (`cfg/config.py`)
 
- - **headsign**
- - **latitude**
- - **longitude**
- - **radius**
- - **wifi name**
- - **wifi password**
+ - **headsign** - Target destination
+ - **latitude/longitude** - Location coordinates
+ - **radius** - Search area
+ - **wifi name/password** - Network access
 
 ## ▶️ How to run
 
