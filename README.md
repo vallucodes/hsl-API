@@ -71,18 +71,19 @@ mpremote connect /dev/ttyUSB<nb> exec "exec(open('main.py').read())"
 ## Useful information
 
 > [!TIP]
+> Useful tip
 
-> Might have to run like this if esptool was installed by hand
-> ``` shell
-> python3 -m esptool --port /dev/ttyUSB<nb> erase_flash
-> python3 -m esptool --baud 460800 write_flash 0x1000 ESP32_GENERIC-20250415-v1.25.0.bin
-> ```
+Might have to run like this if esptool was installed by hand
+``` shell
+python3 -m esptool --port /dev/ttyUSB<nb> erase_flash
+python3 -m esptool --baud 460800 write_flash 0x1000 ESP32_GENERIC-20250415-v1.25.0.bin
+```
 
-> Any problems with wifi? It must be 2.4GHz. \
-> Still? Try running
-> ``` shell
-> mpremote connect /dev/ttyUSB<nb> exec "exec(open('reset_network.py').read())"
-> ```
+Any problems with wifi? It must be 2.4GHz. \
+Still? Try running
+``` shell
+mpremote connect /dev/ttyUSB<nb> exec "exec(open('reset_network.py').read())"
+```
 
 ### API
 Register in digitransit to get api key. Build GraphQL query with help of their tool below:
