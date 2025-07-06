@@ -1,12 +1,12 @@
-# HSL API combined with microcontroller
+# 📡 HSL API combined with microcontroller 🚌
 
-Picture here of real world
+<img src="imgs/image.jpeg" width="49%" alt="Image 1">
+<img src="imgs/img2.png" width="49%" alt="Image 2">
 
-Picture next to it with electrical scheme
 
-## Overview
+## 🌐 Overview
 
-This program fetches nearby public transport stops in Helsinki with given **radius**, **longitude** and **latitude**. Based on given **destination** of the bus, LED will shine with certain color depending on time to arrival to that direction withing given **radius**.
+This microcontroller-based program fetches nearby public transport stops in Helsinki within a given **radius** based on **longitude** and **latitude**. An LED displays different colors based on arrival times for buses traveling to the specified **destination**.
 
 
 | LED COLOR | Time to arrival |
@@ -15,7 +15,7 @@ This program fetches nearby public transport stops in Helsinki with given **radi
 | BLUE | < 5 minutes |
 | GREEN | >= 5 minutes |
 
-## Features
+## 🌟 Features
 
 Setup parameters in cfg/config.py
 
@@ -26,7 +26,7 @@ Setup parameters in cfg/config.py
  - **wifi name**
  - **wifi password**
 
-## How to run
+## ▶️ How to run
 
 Setup parameters in cfg/config.py.
 
@@ -57,21 +57,25 @@ Run it by
 mpremote connect /dev/ttyUSB<nb> exec "exec(open('main.py').read())"
 ```
 
-## Technical elements
+## 🛠️ Technical features
 
+| Feature           | Detail                                                                                      |
+|---------------------|--------------------------------------------------------------------------------------------------|
+| HSL API          | Fetching data from HSL API using GraphQL queries  |
+| Real-time data | Continuously polls HSL API for live arrival times  |
+| LED auto-refresh  | Automatically updates LED color depending on fastest arrival time   |
+| Config           | User must update configuration file regarding spatial data and Wifi information |
+| Wifi   | Automatic connection to given Wifi network   |
+| Debug Wifi | Reset network manually in case of problems by running reset_network.py|
+| Errors      |   Descriptive errors shown depending on what happened  |
 
+## 📦 Dependencies
 
-## Dependencies
-
-### Download
 - Mpremote
 - Esptool
-- Microcontroller firmaware https://micropython.org/download/ESP32_GENERIC/
+- Microcontroller firmaware: https://micropython.org/download/ESP32_GENERIC/
 
-## Useful information
-
-> [!TIP]
-> Useful tip
+## 💡 Tips
 
 Might have to run like this if esptool was installed by hand
 ``` shell
@@ -89,7 +93,7 @@ mpremote connect /dev/ttyUSB<nb> exec "exec(open('reset_network.py').read())"
 Register in digitransit to get api key. Build GraphQL query with help of their tool below:
 https://portal-api.digitransit.fi/api-details#api=routing-v2-finland-gtfs
 
-## Creators
+## 👥 Creators
 
 - [Vladimir Lopatinski](https://github.com/vallucodes)
 - [Matias Quero](https://github.com/kerito-cl)
