@@ -7,7 +7,7 @@ from config import TARGET_HEADSIGN, LOCATION_LAT, LOCATION_LON, RADIUS, WIFI_SSI
 url = "https://api.digitransit.fi/routing/v2/finland/gtfs/v1"
 
 headers = {
-	"digitransit-subscription-key": "62640b56a6db4d0085cb7d08884990d4",
+	"digitransit-subscription-key": "",
 	"Content-Type": "application/json"
 }
 
